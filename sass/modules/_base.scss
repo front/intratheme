@@ -1,0 +1,149 @@
+/* Base */
+
+body {
+  /*padding-top: 51px;*/
+  word-wrap: break-word;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+a, a:hover {
+  color: #016973;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fluid {
+  padding: 0 15px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+table tr td a {
+  display:block;
+  width:100%;
+}
+
+th {
+  background: #F7FBFC;
+}
+
+.margin-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.margin-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.margin-30-15 {
+  margin: 30px 0 15px;
+}
+
+.margin-60-30 {
+  margin: 60px 0 30px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 30px;
+}
+
+.badge-red {
+  background-color: #C42B2B;
+}
+
+.container {
+  // padding: 15px 0;
+}
+
+
+.row > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.section-heading {
+  margin-bottom: 0;
+  margin-top: 30px;
+
+  color: #6C6D72;
+  text-align: center;
+  background: #EEE;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.off-canvas-list {
+  .menu {
+    margin-left: 0;
+  }
+   .nav>li>a:hover { // just to override an unfortunate BS thingie
+    background-color: inherit;
+  }
+}
+
+.section-heading.cool { // For bolder look
+  color: white;
+  background: #E50078;
+  font-size: 2em;
+}
+
+.vcard {
+  margin-top: 15px;
+}
+
+iframe {
+  // margin-bottom: 30px;
+
+  // box-shadow: 0px 0px 0px 5px rgba(14, 174, 199,0.9);
+  // -webkit-box-shadow: 0px 0px 0px 5px rgba(14, 174, 199,0.9);
+  // -moz-box-shadow: 0px 0px 0px 5px rgba(14, 174, 199,0.9);
+  background: #E50078;
+}
+
+.site-footer {
+  margin-top: 60px;
+}
+
+
+/* Search input */
+.search-input {
+  margin-right: 7px;
+  margin-top: -2px;
+}
+
+// Hide top bar for anon users
+.not-logged-in {
+  .top-bar {
+    display: none !important;
+  }
+
+  .tab-bar {
+    display: none !important;
+  }
+}
+
+// Fix some IPE glitches.
+ul.panels-ipe-linkbar {
+  list-style: none;
+  li {
+    float: left;
+  }
+}
+
+@media #{$medium-up} {
+  .region-content {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,49 @@
+// Memetor colors. SASS magic needed.
+
+.bg-blue {
+  background: #0EAEC7;
+}
+
+.bg-green {
+  background: #C9B934;
+  border-color: #B7A931;
+  text-shadow: 1px 1px 1px #B7A931;
+  i {
+    color: #62692F;
+  }
+}
+
+.bg-greener {
+  background: #4ea7a7;
+  border-color: #427272;
+  text-shadow: 1px 1px 1px #427272;
+  i {
+    color: #427272;
+  }
+}
+
+.bg-pink {
+  background: #E50078;
+  border-color: #9E2163;
+  text-shadow: 1px 1px 1px #9E2163;
+  i {
+    color: #9E2163;
+  }
+}
+
+.bg-red, .btn-red {
+  background-color: #d32d28;
+  border-color: #A23434;
+  text-shadow: 1px 1px 1px #A23434;
+  color: white;
+  i {
+    color: #A23434;
+  }
+}
+
+.btn-red:hover {
+  background-color: #A23434;
+  border-color: #A23434;
+}
+
+// DIPS colors here

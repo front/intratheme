@@ -1,0 +1,44 @@
+.modal-body {
+  overflow: auto;
+
+  .filter-wrapper, .form-item-view-mode, .description  {
+    display: none; // Feel free to remove this in template.php, Marco :)
+  }
+  .form-item-admin-title {
+    display: block!important; // Not sure how this is hidden with inline styling
+  }
+  .form-group {
+    height: auto; // total fail without
+  }
+  .panels-add-content-modal .panels-section-columns {
+    float: none;
+  }
+  .option-text-aligner { // Override title setting
+    padding-left: 20px;
+  }
+  .form-item-override-title-text {
+    float: none;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    margin-top: 1px;
+  }
+  .ckeditor_links {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.panels-ipe-editing .panels-ipe-portlet-content {
+  margin: 3px;
+
+  .module {
+    margin: 0;
+  }
+  .module .module {
+    margin: 15px 0;
+  }
+}
+
+.panels-flexible-region-1-center {
+  width: auto; // Panels makes it 99% by default
+}

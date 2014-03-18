@@ -1,0 +1,42 @@
+/* Top bar sub navigation for users */
+.top-bar-sub {
+  border-top: 1px solid #3c3c3c;
+  box-sizing: content-box;
+  overflow: visible;
+
+  background: #F5F4EA;
+
+  ul, li a:not(.button), .top-bar--info {
+    background: #F5F4EA;
+    color: #333;
+    font-family: Arial;
+    font-weight: bold;
+  }
+  li {
+    a:not(.button):hover {
+      color: #fff;
+    }
+  }
+  .top-bar-section > ul > .divider {
+    border-color: #D6E9E9;
+  }
+  .top-bar--info {
+    padding: 0 10px;
+    line-height: 45px;
+    font-weight: 300;
+  }
+}
+
+.top-bar .name h1 a {
+  width: auto;
+}
+
+.top-bar--info {
+  font-weight: normal;
+  line-height: 45px;
+  font-size: 15px;
+}
+
+.top-bar-section ul li.active>a {
+  background-color: #38C8E0;
+}

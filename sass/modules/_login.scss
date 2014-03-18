@@ -1,0 +1,55 @@
+body.page-user.not-logged-in {
+  background-color: #E50078;
+
+  .nav-tabs {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .nav-tabs a {
+    color: white;
+
+    &.active, &:hover {
+      color: #222;
+    }
+  }
+
+  form {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.15);
+    background: linear-gradient(to bottom, rgba(245,245,245,1) 0%,rgba(255,255,255,1) 19%,rgba(255,255,255,1) 77%,rgba(245,245,245,1) 100%);
+  }
+}
+
+.page-user {
+  .nav-tabs {
+    margin-bottom: 15px;
+  }
+}
+
+.profile {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.login-container {
+  margin-top: 10%;
+}
+
+.login-logo {
+  margin: 0 10%;
+}
+
+.user-login-logo {
+  text-align: center;
+  padding: 5% 0;
+
+  img {
+    max-width: 300px;
+  }
+}

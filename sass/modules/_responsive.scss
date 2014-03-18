@@ -1,0 +1,32 @@
+/* Top bar sub navigation for users */
+.top-bar-sub {
+  border-top: 1px solid #3c3c3c;
+  box-sizing: content-box;
+
+  background: #E5F1F1;
+  ul, li a:not(.button), .top-bar--info {
+    background: #E5F1F1;
+    color: #333;
+    font-family: Arial;
+    font-weight: bold;
+  }
+  li a:not(.button):hover {
+    background: #00859B;
+    color: #fff;
+  }
+  .top-bar-section > ul > .divider {
+    border-color: #D6E9E9;
+  }
+  .top-bar--info {
+    padding: 0 10px;
+    line-height: 45px;
+    font-weight: 300;
+  }
+}
+
+// Hide IPE controls on mobile screens.
+@media #{$small-only} {
+  .region-page-bottom {
+    display: none;
+  }
+}
