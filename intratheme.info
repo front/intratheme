@@ -1,4 +1,4 @@
-name = Intra THeme
+name = Intra Theme
 description = Frontkom Intra theme mixing Bootstrap, Foundation and custom SCSS stuff.
 core = 7.x
 base theme = bootstrap
