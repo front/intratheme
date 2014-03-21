@@ -108,6 +108,10 @@ th {
   margin-top: 15px;
 }
 
+.form-wrapper + .alert {
+  margin-bottom: 0;
+}
+
 iframe {
   // margin-bottom: 30px;
 
