@@ -1,10 +1,13 @@
 /* Base */
 
 body {
-  /*padding-top: 51px;*/
   word-wrap: break-word;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
+  
+  &.toolbar-drawer, &.toolbar {
+    padding-top: 30px !important;
+  }
 }
 
 a, a:hover {
