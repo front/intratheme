@@ -40,3 +40,12 @@
 .top-bar-section ul li.active>a {
   background-color: #38C8E0;
 }
+
+/* Search input */
+.search-input {
+  margin-right: 7px;
+  input {
+    width: 300px;
+    padding-left: 8px;
+  }
+}
