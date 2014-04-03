@@ -1,5 +1,15 @@
 // Memetor colors. SASS magic needed.
 
+// default
+.bg- {
+  background: #a7a7a7;
+  border-color: #727272;
+  text-shadow: 1px 1px 1px #727272;
+  i {
+    color: #727272;
+  }
+}
+
 .bg-blue {
   background: #0EAEC7;
 }
