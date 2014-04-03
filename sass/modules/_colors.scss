@@ -57,3 +57,7 @@
 }
 
 // DIPS colors here
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+  background-color: #d32d28;
+  border-color: #d32d28;
+}
