@@ -49,3 +49,33 @@
     padding-left: 8px;
   }
 }
+
+// Top bar search
+.region-navigation {
+  .block-search {
+    width: 300px;
+    float: right;
+    margin-right: 0.5em;
+ 
+    input {
+      padding-top: 0.40rem;
+    }
+
+    button {
+      top: 5px;
+    }
+  }
+}
+
+// Top bar search (exposed filter).
+.region-navigation {
+  .views-exposed-form {
+    .views-widget-filter-search_api_views_fulltext {
+      padding: 0px;
+
+      label {
+        display: none;
+      }
+    }
+  }
+}

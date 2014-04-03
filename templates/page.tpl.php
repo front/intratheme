@@ -148,6 +148,11 @@ if (is_array($secondary_nav)) {
         <?php print render($primary_nav); ?>
       <?php endif; ?>
     </ul>
+
+    <?php if (!empty($page['navigation'])): ?>
+      <?php print render($page['navigation']); ?>
+    <?php endif; ?>
+
   </section>
 </nav>
 <!-- End menu for non mobile -->
