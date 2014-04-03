@@ -1,0 +1,16 @@
+ol.breadcrumb {
+  margin-left: 0px;
+  padding: 12px 0px;
+  
+  li {
+    a {
+      padding: 16px 15px;
+      
+      &:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}
+
