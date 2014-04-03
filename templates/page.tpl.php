@@ -157,6 +157,8 @@ if (is_array($secondary_nav)) {
 </nav>
 <!-- End menu for non mobile -->
 
+<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+
 <?php if (!empty($title)): ?>
   <h1 class="page-header"><?php print $title; ?></h1>
 <?php endif; ?>
