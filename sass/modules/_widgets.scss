@@ -23,16 +23,12 @@
   }
   .content { // Articles in a widget, basically
     padding: 0 15px;
-  }
-  
-  .node {
-    padding: 5px 30px !important;
-  }
+  }  
 }
 
 .module-bordered {
   .node {
-    padding: 5px 30px;
+    padding: 5px 30px !important;
   }
 }
 
