@@ -30,6 +30,12 @@
   }
 }
 
+.module-bordered {
+  .node {
+    padding: 5px 30px;
+  }
+}
+
 .module--header {
   padding: 9px;
   border-bottom: 3px solid #016973;
