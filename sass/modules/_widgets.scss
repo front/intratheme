@@ -28,7 +28,7 @@
 
 .module-bordered {
   .node {
-    padding: 5px 30px;
+    padding: 5px 30px !important;
   }
 }
 
@@ -212,7 +212,7 @@
   }
   .module-bordered {
     border: 1px solid #efefef;
-    
+
     border-radius: 3px;
     box-shadow: 0px 1px 0px #eee;
   }
