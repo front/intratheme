@@ -73,22 +73,19 @@
 }
 
 .module-metro {
+  display: block;
+  text-align: center;
   min-height: 238px;
   color: white;
-
   background: #38C8E0;
-  figure {
-    padding-top: 20%;
-  }
-  figcaption {
-    padding-top: 5%;
-  }
   i {
+    padding-top: 20%;
     font-size: 100px;
     line-height: 100px;
     color: #3E637F;
   }
   h2 {
+    padding-top: 5%;
     color: white;
   }
 }
@@ -228,4 +225,8 @@
   .table>tbody>tr>td {
     height: 57px;
   }
+}
+/* panel separator */
+.panel-separator {
+  clear: both;
 }
