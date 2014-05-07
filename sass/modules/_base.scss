@@ -159,3 +159,18 @@ ul.panels-ipe-linkbar {
     padding: 0 15px;
   }
 }
+
+// Apache Solr Autocomplete.
+.ac_results {
+  width: 233px !important;
+
+  ul {
+    li {
+      padding: 10px !important;
+
+      &.ac_over {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
