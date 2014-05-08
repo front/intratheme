@@ -175,6 +175,23 @@
   }
 }
 
+// Search facet api.
+ul.facetapi-facetapi-links {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .nav-stacked;
+
+  li {
+    a {
+      &.active {
+        //@extend .nav-pills>li.active>a;
+        background-color: #4ea7a7;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
 
 @media #{$medium-up} {
   body.front-page {

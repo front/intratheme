@@ -110,3 +110,11 @@ function intratheme_page_alter(&$page) {
     }
   }
 }
+
+/**
+ * Overrides facetapi active link theme.
+ */
+function intratheme_facetapi_link_active(&$vars) {
+  $vars['options']['html'] = TRUE;
+  return l('<span class="glyphicon glyphicon-remove"></span> ' . $vars['text'], $vars['path'], $vars['options']);
+}
