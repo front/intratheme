@@ -162,7 +162,8 @@ ul.panels-ipe-linkbar {
 
 // Apache Solr Autocomplete.
 .ac_results {
-  width: 233px !important;
+  width: 251px !important;
+  border: solid 1px #ccc;
 
   ul {
     li {
@@ -173,4 +174,11 @@ ul.panels-ipe-linkbar {
       }
     }
   }
+}
+
+// Change throbber on input auto-complete.
+input.form-autocomplete {
+  //background: url(../images/ajax-loader.gif) no-repeat !important;
+  background-image: url(../images/ajax-loader.gif) !important;
+  
 }
