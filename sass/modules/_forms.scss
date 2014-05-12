@@ -6,6 +6,7 @@
 }
 
 .form-autocomplete {
+  background-image: url(../images/ajax-loader.gif) !important;
   background-position: 100% 40px !important;
 
   &.throbbing {
