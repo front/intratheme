@@ -64,6 +64,9 @@
     button {
       top: 5px;
     }
+    @media only screen and (min-width: 641px) and (max-width: 780px) {
+      width: 165px;
+    }
   }
 }
 
