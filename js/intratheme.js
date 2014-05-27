@@ -15,6 +15,10 @@ var Drupal = Drupal || {};
         $(document).foundation();        
         FastClick.attach(document.body);
       });
+      // No link behaviour.
+      $('.no-link').click(function(e) {
+        e.preventDefault();
+      });
     }
   }
 })(jQuery, Drupal);
