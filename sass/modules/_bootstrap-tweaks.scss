@@ -30,6 +30,12 @@
 .alert-danger a {
   color: inherit;
   text-decoration: underline;
+  
+  &.close {
+    text-decoration: none;    
+    margin-top: -11px;
+    margin-right: -5px;
+  }
 }
 
 ul {
