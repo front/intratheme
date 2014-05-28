@@ -56,13 +56,17 @@
     width: 300px;
     float: right;
     margin-right: 0.5em;
+    line-height: 19px;
  
     input {
       padding-top: 0.40rem;
+      line-height: 19px;
+      height: 33px;
     }
 
     button {
-      top: 5px;
+      top: 7px;
+      line-height: 19px;
     }
     @media only screen and (min-width: 641px) and (max-width: 780px) {
       width: 165px;
