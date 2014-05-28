@@ -38,16 +38,21 @@ function intratheme_menu_tree__menu_home_menu(&$variables) {
  */
 function intratheme_menu_link__menu_home_menu(array $variables) {
   $element           = $variables['element'];
+  // get link classes from the style attribute
+  $default_classes = array('module', 'module-bordered', 'module-metro');
+  $link_classes = empty($element['#localized_options']['attributes']['style']) ? array() : explode(' ', $element['#localized_options']['attributes']['style']);
+  $link_classes = array_merge($link_classes, $default_classes);
+  // link options
   $link_options      = array(
     'html'       => TRUE,
     'attributes' => array(
-      'class' => array('module', 'module-bordered', 'module-metro')
+      'class' => $link_classes
     )
   );
   $link_icon_classes = NULL;
-  $link_classes      = empty($element['#localized_options']['attributes']['class']) ? NULL : $element['#localized_options']['attributes']['class'];
-  if ( ! empty($link_classes)) {
-    foreach ($link_classes as $class) {
+  $link_class_attribute      = empty($element['#localized_options']['attributes']['class']) ? NULL : $element['#localized_options']['attributes']['class'];
+  if ( ! empty($link_class_attribute)) {
+    foreach ($link_class_attribute as $class) {
       $link_icon_classes .= $class . ' ';
     }
   }
