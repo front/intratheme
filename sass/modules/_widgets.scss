@@ -87,6 +87,17 @@
   h2 {
     padding-top: 5%;
     color: white;
+    font-size: 1.80rem;
+  }
+  
+  @media #{$small-only} {
+    h2 {
+      font-size: 1.50rem;
+    }
+    
+    i {
+      padding-top: 10%;
+    }
   }
 }
 
