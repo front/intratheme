@@ -52,6 +52,7 @@
 
 // Top bar search
 .region-navigation {
+
   .block-search {
     width: 300px;
     float: right;
@@ -68,9 +69,11 @@
       top: 7px;
       line-height: 19px;
     }
+
     @media only screen and (min-width: 641px) and (max-width: 800px) {
       width: 165px;
     }
+
   }
 }
 
