@@ -104,14 +104,14 @@ function intratheme_menu_link(array $variables) {
  * Implements hook_page_alter().
  */
 function intratheme_page_alter(&$page) {
+  global $user;
+  
   // Adds theme logo on user login form.
-  if (isset( $page['content']['system_main']['form_id'] ) && $form_id = $page['content']['system_main']['form_id']) {
-    if ($form_id['#value'] == 'user_login') {
-      if ($logo = theme_get_setting('logo')) {
-        $page['page_top']['login_logo'] = array(
-          '#markup' => '<div class="user-login-logo"><img src="' . $logo . '" alt="" /></div>'
-        );
-      }
+  if ($user->uid === 0) {
+    if ($logo = theme_get_setting('logo')) {
+      $page['page_top']['login_logo'] = array(
+        '#markup' => '<div class="user-login-logo"><img src="' . $logo . '" alt="" /></div>'
+      );
     }
   }
 }

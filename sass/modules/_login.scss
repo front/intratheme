@@ -1,4 +1,4 @@
-body.page-user.not-logged-in {
+body.not-logged-in {
   background-color: #E50078;
 
   .nav-tabs {
@@ -12,6 +12,10 @@ body.page-user.not-logged-in {
     &.active, &:hover {
       color: #222;
     }
+  }
+  
+  .breadcrumb {
+    display: none;
   }
 
   form {
