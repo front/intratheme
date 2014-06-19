@@ -1,5 +1,15 @@
 // Memetor colors. SASS magic needed.
 
+// default card color.
+.bg- {
+  background: #a7a7a7;
+  border-color: #727272;
+  text-shadow: 1px 1px 1px #727272;
+  i {
+    color: #727272;
+  }
+}
+
 .bg-blue {
   background: #0EAEC7;
 }
@@ -47,3 +57,7 @@
 }
 
 // DIPS colors here
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+  background-color: #d32d28;
+  border-color: #d32d28;
+}

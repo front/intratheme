@@ -6,7 +6,7 @@
     text-align: center;
   }
   ul {
-    margin: 0;
+    // margin: 0;
   }
   ol {
     margin: 20px;
@@ -23,6 +23,12 @@
   }
   .content { // Articles in a widget, basically
     padding: 0 15px;
+  }
+}
+
+.module-bordered {
+  .node {
+    padding: 5px 30px !important;
   }
 }
 
@@ -67,23 +73,31 @@
 }
 
 .module-metro {
+  display: block;
+  text-align: center;
   min-height: 238px;
   color: white;
-
   background: #38C8E0;
-  figure {
-    padding-top: 20%;
-  }
-  figcaption {
-    padding-top: 5%;
-  }
   i {
+    padding-top: 20%;
     font-size: 100px;
     line-height: 100px;
     color: #3E637F;
   }
   h2 {
+    padding-top: 5%;
     color: white;
+    font-size: 1.80rem;
+  }
+  
+  @media #{$small-only} {
+    h2 {
+      font-size: 1.50rem;
+    }
+    
+    i {
+      padding-top: 10%;
+    }
   }
 }
 
@@ -98,6 +112,13 @@
 
 .module-text {
   padding: 0 15px 30px;
+}
+
+.module-events {
+  i {
+    font-size: 30px;
+    color: #2b3033;
+  }
 }
 
 // OG Drive Panes
@@ -181,6 +202,24 @@
   }
 }
 
+// Search facet api.
+ul.facetapi-facetapi-links {
+  @extend .nav;
+  @extend .nav-pills;
+  @extend .nav-stacked;
+
+  li {
+    a {
+      &.active {
+        //@extend .nav-pills>li.active>a;
+        background-color: #4ea7a7;
+        color: #ffffff;
+        padding-left: 8px;
+      }
+    }
+  }
+}
+
 
 @media #{$medium-up} {
   body.front-page {
@@ -215,7 +254,7 @@
   }
   .module-bordered {
     border: 1px solid #efefef;
-    
+
     border-radius: 3px;
     box-shadow: 0px 1px 0px #eee;
   }
@@ -231,4 +270,8 @@
   .table>tbody>tr>td {
     height: 57px;
   }
+}
+/* panel separator */
+.panel-separator {
+  clear: both;
 }

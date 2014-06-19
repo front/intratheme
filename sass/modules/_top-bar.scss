@@ -40,3 +40,52 @@
 .top-bar-section ul li.active>a {
   background-color: #38C8E0;
 }
+
+/* Search input */
+.search-input {
+  margin-right: 7px;
+  input {
+    width: 300px;
+    padding-left: 8px;
+  }
+}
+
+// Top bar search
+.region-navigation {
+
+  .block-search {
+    width: 300px;
+    float: right;
+    margin-right: 0.5em;
+    line-height: 19px;
+ 
+    input {
+      padding-top: 0.40rem;
+      line-height: 19px;
+      height: 33px;
+    }
+
+    button {
+      top: 7px;
+      line-height: 19px;
+    }
+
+    @media only screen and (min-width: 641px) and (max-width: 800px) {
+      width: 165px;
+    }
+
+  }
+}
+
+// Top bar search (exposed filter).
+.region-navigation {
+  .views-exposed-form {
+    .views-widget-filter-search_api_views_fulltext {
+      padding: 0px;
+
+      label {
+        display: none;
+      }
+    }
+  }
+}

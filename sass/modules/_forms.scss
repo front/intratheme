@@ -1,0 +1,15 @@
+.form-wrapper {
+  background: #F5F4EA;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+//  padding-right: 15px;
+}
+
+.form-autocomplete {
+  background-image: url(../images/ajax-loader.gif) !important;
+  background-position: 100% 40px !important;
+
+  &.throbbing {
+    background-position: 98% 8px !important;
+  }
+}

@@ -1,10 +1,12 @@
 /* Base */
-
 body {
-  /*padding-top: 51px;*/
   word-wrap: break-word;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
+
+  &.toolbar-drawer, &.toolbar {
+    padding-top: 30px !important;
+  }
 }
 
 a, a:hover {
@@ -68,6 +70,9 @@ th {
   // padding: 15px 0;
 }
 
+.clearfix {
+  @include clearfix;
+}
 
 .row > div {
   padding-left: 0;
@@ -104,8 +109,16 @@ th {
   font-size: 2em;
 }
 
+.top-bar-sub {
+  margin-bottom: 15px;
+}
+
 .vcard {
   margin-top: 15px;
+}
+
+.form-wrapper + .alert {
+  margin-bottom: 0;
 }
 
 iframe {
@@ -121,12 +134,6 @@ iframe {
   margin-top: 60px;
 }
 
-
-/* Search input */
-.search-input {
-  margin-right: 7px;
-  margin-top: -2px;
-}
 
 // Hide top bar for anon users
 .not-logged-in {
@@ -150,5 +157,21 @@ ul.panels-ipe-linkbar {
 @media #{$medium-up} {
   .region-content {
     padding: 0 15px;
+  }
+}
+
+// Apache Solr Autocomplete.
+.ac_results {
+  width: 251px !important;
+  border: solid 1px #ccc;
+
+  ul {
+    li {
+      padding: 10px !important;
+
+      &.ac_over {
+        background-color: $brand-primary;
+      }
+    }
   }
 }

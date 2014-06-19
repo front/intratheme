@@ -94,8 +94,15 @@
 
 <?php
 // Get only 1st level children for mobile menu.
-$primary_nav_mobile = reset($primary_nav)['#below'];
-$secondary_nav_mobile = reset($secondary_nav)['#below'];
+if (is_array($primary_nav)) {
+  $primary_nav_items = reset($primary_nav);
+  $primary_nav_mobile = $primary_nav_items['#below'];
+}
+
+if (is_array($secondary_nav)) {
+  $secondary_nav_items = reset($secondary_nav);
+  $secondary_nav_mobile = $secondary_nav_items['#below'];
+}
 ?>
 
 <?php if (!empty($primary_nav_mobile)): ?>
@@ -141,9 +148,16 @@ $secondary_nav_mobile = reset($secondary_nav)['#below'];
         <?php print render($primary_nav); ?>
       <?php endif; ?>
     </ul>
+
+    <?php if (!empty($page['navigation'])): ?>
+      <?php print render($page['navigation']); ?>
+    <?php endif; ?>
+
   </section>
 </nav>
 <!-- End menu for non mobile -->
+
+<?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
 
 <?php if (!empty($title)): ?>
   <h1 class="page-header"><?php print $title; ?></h1>

@@ -15,3 +15,5 @@
     margin-left: -0.9375rem;
   }
 }
+
+[class*="column"] + [class*="column"]:last-child { float: $default-float; }
