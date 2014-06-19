@@ -125,18 +125,6 @@
 .module {
   .google-drive-service-breadcrumbs {
     padding: 25px;
-    
-    
-    a {
-      &:before {
-        content: "\e118";
-        font-family: "Glyphicons Halflings";
-        font-weight: 300;
-        padding: 25px;
-        display: table-cell;
-        border-bottom: solid 1px #eee;
-      }
-    }
   }
 
   ul.files {
