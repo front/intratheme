@@ -7,3 +7,32 @@ table {
     font-weight: bold;
   }
 }
+
+.view-content {
+  overflow: hidden;
+}
+
+.views-table {
+  .views-field div {
+    width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+@media #{$large-up} {
+  .views-table {
+    .views-field div {
+      width: 300px;
+    }
+  }
+}
+
+@media #{$xlarge-up} {
+  .views-table {
+    .views-field div {
+      width: auto;
+    }
+  }
+}
