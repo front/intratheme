@@ -12,7 +12,7 @@
 <?php endif; ?>
 <nav class="row">
 <?php foreach ($rows as $id => $row): ?>
-  <div class="small-6 medium-3 columns">
+  <div class="small-6 medium-4 large-3 xlarge-2 columns">
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>
