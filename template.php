@@ -68,6 +68,11 @@ function intratheme_menu_link(array $variables) {
   $element  = $variables['element'];
   $sub_menu = '';
 
+  // Check access at the link level, if access is set.
+  if (isset($element['#access']) && !$element['#access']) {
+    return FALSE;
+  }
+
   if ($element['#below']) {
     // Prevent dropdown functions from being added to management menu so it
     // does not affect the navbar module.
@@ -105,7 +110,7 @@ function intratheme_menu_link(array $variables) {
  */
 function intratheme_page_alter(&$page) {
   global $user;
-  
+
   // Adds theme logo on user login form.
   if ($user->uid === 0) {
     if ($logo = theme_get_setting('logo')) {
